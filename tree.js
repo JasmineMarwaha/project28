@@ -7,13 +7,16 @@ class Tree {
           this.body = Bodies.rectangle(x, y, width, height, options);
           this.width = width;
           this.height = height;
+          this.image = loadImage("images/tree.png");
           World.add(world, this.body);
 
      }
      display(){
          var pos = this.body.position;
-         rectMode(CENTER);
+         //rectMode(CENTER);
          fill("green");
-         rect(pos.x, pos.y, this.width, height);
+         //rect(pos.x, pos.y, this.width, height);
+         imageMode(CENTER);
+         image(this.image, pos.x, pos.y, this.width, this.height);
      }
 };
