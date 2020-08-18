@@ -20,3 +20,4 @@ class Tree {
          image(this.image, pos.x, pos.y, this.width, this.height);
      }
 };
+
